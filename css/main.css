@@ -1,0 +1,105 @@
+/*Clases reutilizables*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  float: left;
+}
+
+a {
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+  height: 30px;
+  margin-right: 3px;
+}
+
+.background {
+  background: rgba(255,255,255,.3);
+  border-radius: 3px;
+}
+
+/*Definiendo estilos*/
+body {
+  background: #0079bf;
+  color: #fff;
+}
+
+/*----------Cabecera----------*/
+header {
+  width: 100%;
+  text-align: justify;
+  background: #0067a3;
+  padding: 5px 10px;
+  height: 40px;
+  z-index: 1000;
+}
+
+header::after {
+  width: 100%;
+  content:"";
+  display: inline-block;
+}
+
+header .navbar {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+img {
+  width: 80px;
+  opacity: 0.5;
+}
+
+/*Centrar el logo*/
+.logo {
+  margin: auto;
+}
+
+.navbar input {
+  background: rgba(255,255,255,.3);
+  border: none;
+}
+
+/*Barra de menú*/
+.menu-bar {
+  height: 50px;
+  padding: 10px;
+}
+
+.show-menu {
+  margin-top: 5px;
+  float: right;
+}
+
+/*----------Sección de tableros----------*/
+.boards {
+  padding: 0 10px;
+}
+
+.input-board {
+  background: rgba(0,0,0,.12);
+  cursor: pointer;
+  width: 270px;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+.input-board:hover{
+  background: rgba(0,0,0,.3);
+
+}
+
+.input {
+  display: block;
+  padding: 7px;
+  color: rgba(255,255,255,.7);
+  border-color: transparent;
+}
