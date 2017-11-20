@@ -17,5 +17,21 @@ window.addEventListener('load', function(event) {
     btnSave.textContent = 'Guardar';
     btnSave.classList.add('btn-green');
     inputBoard.appendChild(btnSave);
+    // Evento para el botón
+    btnSave.addEventListener('click', function() {
+      // Mostrando nombre de la lista
+      inputBoard.removeChild(newList);
+      var nameList = document.createElement('p');
+      nameList.textContent = newList.value;
+      nameList.classList.add('name-list-js');
+      inputBoard.appendChild(nameList);
+      // Mostrando texto "Añadir una tarea"
+      var addTask = document.createElement('a');
+      addTask.textContent = 'Añadir una tarea...';
+      addTask.classList.add('add-task-js');
+      inputBoard.appendChild(addTask);
+      inputBoard.removeChild(btnSave);
+      // inputBoard.replaceChild(nameList, newList);
+    });
   });
 });

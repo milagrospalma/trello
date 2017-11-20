@@ -16,7 +16,7 @@ ul li {
 a {
   padding: 5px;
   text-decoration: none;
-  color: #fff;
+  color: #FFF;
   height: 30px;
   margin-right: 3px;
 }
@@ -28,15 +28,16 @@ a {
 
 /*Definiendo estilos*/
 body {
-  background: #0079bf;
-  color: #fff;
+  background: #0079BF;
+  font-family: Helvetica, sans-serif;
+  color: #FFF;
 }
 
 /*----------Cabecera----------*/
 header {
   width: 100%;
   text-align: justify;
-  background: #0067a3;
+  background: #0067A3;
   padding: 5px 10px;
   height: 40px;
   z-index: 1000;
@@ -104,7 +105,7 @@ img {
   padding: 7px;
   /*background-color: transparent;*/
   /*border-color: transparent;*/
-  color: gray;
+  color: #000;
   margin-bottom: 5px;
 }
 
@@ -124,4 +125,18 @@ img {
   border: none;
   border-radius: 3px;
   color: #FFF;
+}
+
+.name-list-js {
+  color: #000;
+  font-weight: 700;
+  line-height: 1.5;
+  height: 30px;
+  padding: 3px;
+  vertical-align: top;
+}
+
+.add-task-js {
+  color: #838C91;
+  display: block;
 }
