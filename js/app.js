@@ -1,4 +1,4 @@
-window.addEventListener('load', function(event) {
+window.addEventListener('load', function() {
   // Declarando variables
   var sectionBoards = document.getElementById('boards');
   var inputBoard = document.getElementById('input-board');
@@ -17,7 +17,7 @@ window.addEventListener('load', function(event) {
     btnSave.textContent = 'Guardar';
     btnSave.classList.add('btn-green');
     inputBoard.appendChild(btnSave);
-    // Evento para el botón
+    // Evento para el botón guardar
     btnSave.addEventListener('click', function() {
       // Mostrando nombre de la lista
       inputBoard.removeChild(newList);
@@ -32,17 +32,21 @@ window.addEventListener('load', function(event) {
       inputBoard.appendChild(addTask);
       inputBoard.removeChild(btnSave);
       // inputBoard.replaceChild(nameList, newList);
-      // Evento para añadir una tarea
+      // Evento para añadir una tarea (crear textarea y botón)
       addTask.addEventListener('click', function() {
         inputBoard.removeChild(addTask);
+        // Creando el textarea
         var taskInput = document.createElement('textarea');
         taskInput.classList.add('task-input-js');
         taskInput.setAttribute('rows', 3);
         inputBoard.appendChild(taskInput);
+        // Creando el botón
         var btnAdd = document.createElement('button');
         btnAdd.textContent = 'Añadir';
         btnAdd.classList.add('btn-green');
         inputBoard.appendChild(btnAdd);
+        // Agregando focus
+        taskInput.focus();
       });
     });
   });

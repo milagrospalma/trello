@@ -100,14 +100,17 @@ img {
 
 /*----------Estilos js----------*/
 .new-list {
-  display: block;
-  width: 100%;
-  padding: 7px;
   background-color: transparent;
-  border: none;
   border: 1px solid #B9B9Ba;
   color: #000;
+  display: block;
   margin-bottom: 5px;
+  padding: 7px;
+  width: 100%;
+}
+
+.new-list:focus {
+  outline: none;
 }
 
 .input-board-js {
@@ -144,6 +147,22 @@ img {
 
 .task-input-js {
   width: 100%;
+  font-family: Helvetica, sans-serif;
+  padding: 8px;
   /*resize: none;*/
+  margin-bottom: 5px;
+  border: none;
+}
+
+.task-input-js:focus {
+  outline: none;
+}
+
+.task-box-js {
+  font-size: 14px;
+  background-color: #FFF;
+  color: #000;
+  padding: 5px;
+  border-radius: 2px;
   margin-bottom: 5px;
 }
