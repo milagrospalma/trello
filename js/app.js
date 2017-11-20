@@ -47,6 +47,19 @@ window.addEventListener('load', function() {
         inputBoard.appendChild(btnAdd);
         // Agregando focus
         taskInput.focus();
+        // Evento para el botón Añadir
+        btnAdd.addEventListener('click', function() {
+          // Creando tarea
+          var taskBox = document.createElement('div');
+          taskBox.classList.add('task-box-js');
+          var task = document.createElement('span');
+          task.textContent = taskInput.value;
+          taskBox.appendChild(task);
+          // Agregando tareas antes del textarea
+          inputBoard.insertBefore(taskBox, taskInput);
+          taskInput.value = '';
+          taskInput.focus();
+        });
       });
     });
   });
