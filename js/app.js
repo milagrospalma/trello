@@ -32,6 +32,18 @@ window.addEventListener('load', function(event) {
       inputBoard.appendChild(addTask);
       inputBoard.removeChild(btnSave);
       // inputBoard.replaceChild(nameList, newList);
+      // Evento para añadir una tarea
+      addTask.addEventListener('click', function() {
+        inputBoard.removeChild(addTask);
+        var taskInput = document.createElement('textarea');
+        taskInput.classList.add('task-input-js');
+        taskInput.setAttribute('rows', 3);
+        inputBoard.appendChild(taskInput);
+        var btnAdd = document.createElement('button');
+        btnAdd.textContent = 'Añadir';
+        btnAdd.classList.add('btn-green');
+        inputBoard.appendChild(btnAdd);
+      });
     });
   });
 });

@@ -103,8 +103,9 @@ img {
   display: block;
   width: 100%;
   padding: 7px;
-  /*background-color: transparent;*/
-  /*border-color: transparent;*/
+  background-color: transparent;
+  border: none;
+  border: 1px solid #B9B9Ba;
   color: #000;
   margin-bottom: 5px;
 }
@@ -139,4 +140,10 @@ img {
 .add-task-js {
   color: #838C91;
   display: block;
+}
+
+.task-input-js {
+  width: 100%;
+  /*resize: none;*/
+  margin-bottom: 5px;
 }
